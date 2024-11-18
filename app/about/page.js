@@ -13,6 +13,13 @@ const About = () => {
       <button className="navbtn" onClick={() => router.push("/")}>
         Go to the home page
       </button>
+
+      <br />
+      {/* Links for nested routing */}
+      <Link href="/about/abtstudent">Go to About Student</Link>
+
+      <br />
+      <Link href="/about/abtcollege">Go to About College</Link>
     </div>
   );
 };
