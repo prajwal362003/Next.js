@@ -40,3 +40,7 @@ body {
   cursor: pointer;
   padding: 10px 20px;
 }
+
+.abt-nav a:hover {
+  color: brown;
+}

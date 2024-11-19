@@ -1,7 +1,9 @@
 .abt-nav {
   display: flex;
-  justify-content: space-between;
-  margin-left: 5px;
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+  gap: 1rem; /* Adds spacing between list items */
 }
 
 .abt-nav a:hover {
