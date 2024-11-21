@@ -1,5 +1,6 @@
 "use client";
 
+// API Fetching in Client Component
 const { useEffect, useState } = require("react");
 
 const ProductList = () => {
