@@ -1,5 +1,7 @@
 // API Fetching in Server Component
 
+import Author from "./author";
+
 const quotes = async () => {
   let data = await fetch("https://dummyjson.com/quotes");
   let response = await data.json(); // parse json
@@ -15,7 +17,8 @@ const Quotes = async () => {
       <ul>
         {quote.map((item) => (
           <li key={item.id}>
-            Quote: {item.quote} - {item.author}
+            Quote: {item.quote}
+            <Author author={item.author} />
           </li>
         ))}
       </ul>

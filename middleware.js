@@ -13,10 +13,9 @@ const Middlewares = (request) => {
 // The config.matcher in Next.js middleware is used to define the specific routes or patterns where the middleware should run.
 // By default, middleware applies to all routes, but the matcher allows you to limit it to specific paths, making it more efficient and targeted.
 export const config = {
-  // matcher: "/about/:path*",
-
+  matcher: "/about/:path*",
   // If we do not want user to access multiple routes , then use in the form of array
-  matcher: ["/about/:path*", "/studentlist/:path*"],
+  // matcher: ["/about/:path*", "/studentlist/:path*"],
 };
 
 export default Middlewares;
