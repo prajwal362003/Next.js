@@ -11,16 +11,17 @@ const FontOpt = () => {
     <div>
       <h1>Font Optimization in Next.js</h1>
 
-      {/* Using fonts directly from Google Fonts sends additional network requests, 
-          which can slow down the app. */}
+      {/* Using fonts directly from Google Fonts makes the app send extra requests 
+          to Google's servers, which can slow it down. */}
       {/* 
       <h1 style={{ fontFamily: "Roboto", fontWeight: 100 }}>
-        Sentence with fonts fetched directly from Google Fonts API
+        Fonts loaded directly from Google
       </h1> 
       */}
 
-      {/* Using the Next.js font optimization feature, fonts are preloaded and served 
-          efficiently without additional network requests, improving performance. */}
+      {/* Next.js font optimization downloads the font and serves it locally:
+          - No extra requests to Google, making the app faster.
+          - The font is saved (cached) in the browser, so it doesn’t need to download again on the next visit. */}
       <h1 className={roboto.className}>Font with Next.js font feature</h1>
     </div>
   );
