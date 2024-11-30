@@ -9,7 +9,7 @@ const UserList = async () => {
       <h1>Users List</h1>
       <ul>
         {users.map((user) => (
-          <h1 key={user.id}>
+          <h1 key={user.id} className="head1">
             <Link href={`/ssg/${user.id}`}>{user.name}</Link>
           </h1>
         ))}

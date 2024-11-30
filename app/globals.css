@@ -44,3 +44,9 @@ body {
 .abt-nav a:hover {
   color: brown;
 }
+
+.head1 {
+  font-size: 20px;
+  color: #111010;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -13,6 +13,7 @@ const DynamicPage = async ({ params }) => {
       <p>User Email: {userDetails.email}</p>
       <p>Phone: {userDetails.phone}</p>
       <p>Website: {userDetails.website}</p>
+      <p>Company : {userDetails.company.name}</p>
     </div>
   );
 };
